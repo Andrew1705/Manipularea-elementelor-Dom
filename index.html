@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/sript" href="script.js">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   <title>DOM</title>
+</head>
+<body>
+
+    <form class="form-container" onsubmit=" return validate()">
+        <p id="error"></p>
+     <h3>Login</h3>
+   <div class="form-grp">               
+    <label for="username">Username</label><br>
+    <input type="text" name="username" placeholder="Please enter USERNAME" id="user">
+    <i class="fa fa-times u_times"></i>
+    <i class="fa fa-check u_check"></i>
+   </div>
+
+   <div class="form-grp">               
+    <label for="password">Password</label><br>
+    <input type="text" name="password" placeholder="Please enter PASSWORD" id="pass">
+    <i class="fa fa-times p_times"></i>
+    <i class="fa fa-check p_check"></i>
+   </div>
+
+   <div class="form-grp">               
+    <input  onclick=login() type="submit" name="login-btn" value="Login">
+   </div>
+
+
+    </form>
+</html>
+
+      
+  
